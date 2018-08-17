@@ -30,6 +30,11 @@
             <li><a href="#tabbable-items">Tabbable Items</a></li>
             <li><a href="#skip-links">Skip Links</a></li>
             <li><a href="#form">Forms</a></li>
+            <li>
+              <a href="#form" class="skip-link">
+                Skip To Main Content
+              </a>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -104,7 +109,7 @@ embed,
 &lt;/div></code></pre>
         </main>
 
-        <main id="form">
+        <main id="form" tabindex="-1">
           <form class="form-horizontal">
             <fieldset>
               <legend>Sign Up</legend>
@@ -122,8 +127,8 @@ embed,
                 <option>Black</option>
               </select>
               <input type="checkbox"> Remember me
-              <div class="btn btn-default">Cancel</div>
-              <div class="btn btn-primary">Submit</div>
+              <button class="btn btn-default">Cancel</button>
+              <input type="submit" value="submit" class="btn btn-primary" />
             </fieldset>
           </form>
         </main>
