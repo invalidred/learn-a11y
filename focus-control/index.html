@@ -60,32 +60,32 @@
 
         </div>
         <script type="text/javascript">
-         (function() {
-           const form = document.querySelector('form')
-           const focusableItems = [...form]
-           focusableItems.forEach((item, index) => {
-            item.addEventListener('keydown', (event) => {
-              const itemIndex = focusableItems.findIndex(item => item === event.target)
-              const isFirst = itemIndex === 0
-              const isLast = itemIndex === focusableItems.length - 1
-              if (event.key !== 'Tab') {
-                return
-              }
-              if (event.shiftKey && isFirst) {
-                event.preventDefault()
-                const lastElement = focusableItems[focusableItems.length - 1]
-                lastElement.focus()
-                return
-            }
-              if (!event.shiftKey && isLast) {
-                event.preventDefault()
-                const firstElement = focusableItems[0]
-                firstElement.focus()
-                return
-              }
-             })
-           })
-         })()
+        //  (function() {
+        //    const form = document.querySelector('form')
+        //    const focusableItems = [...form]
+        //    focusableItems.forEach((item, index) => {
+        //     item.addEventListener('keydown', (event) => {
+        //       const itemIndex = focusableItems.findIndex(item => item === event.target)
+        //       const isFirst = itemIndex === 0
+        //       const isLast = itemIndex === focusableItems.length - 1
+        //       if (event.key !== 'Tab') {
+        //         return
+        //       }
+        //       if (event.shiftKey && isFirst) {
+        //         event.preventDefault()
+        //         const lastElement = focusableItems[focusableItems.length - 1]
+        //         lastElement.focus()
+        //         return
+        //     }
+        //       if (!event.shiftKey && isLast) {
+        //         event.preventDefault()
+        //         const firstElement = focusableItems[0]
+        //         firstElement.focus()
+        //         return
+        //       }
+        //      })
+        //    })
+        //  })()
         </script>
 
         <!-- A grey overlay for the background -->
